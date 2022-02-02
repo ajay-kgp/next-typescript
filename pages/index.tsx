@@ -18,6 +18,7 @@ const Home: NextPage = () => {
     <Content style={{ padding: '50px' }}>
       <div className="site-layout-content">
         <Title>Exploring Ant Design, ag-grid and TypeScript</Title>
+        <Button type="primary">Get Started</Button>
       </div>
     </Content>
     <Footer style={{ textAlign: 'center' }}>Ant Design Practice | Ajay Yadav</Footer>
