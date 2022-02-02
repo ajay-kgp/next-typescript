@@ -1,23 +1,29 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import type { NextPage } from "next";
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
+import { Button } from "antd";
+import Layout from "antd/lib/layout/layout";
+import { Header, Content, Footer } from "antd/lib/layout/layout";
+import { Typography } from 'antd';
 
 const Home: NextPage = () => {
+  const { Title } = Typography;
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Next and TypeScript</title>
-      </Head>
+    <>
+    <Head>
+      <title>NextJs + TypeScript</title>
+    </Head>
+    <Layout style={{height:'100vh'}}>
+    <Header style={{color:'#fff'}}>Next+TypeScript Playground</Header>
+    <Content style={{ padding: '50px' }}>
+      <div className="site-layout-content">
+        <Title>Exploring Ant Design, ag-grid and TypeScript</Title>
+      </div>
+    </Content>
+    <Footer style={{ textAlign: 'center' }}>Ant Design Practice | Ajay Yadav</Footer>
+  </Layout>
+    </>
+  );
+};
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Exploring Ant Design and ag-grid
-        </h1>
-      </main>
-      
-    </div>
-  )
-}
-
-export default Home
+export default Home;
