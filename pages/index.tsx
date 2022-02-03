@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
 import { Button } from "antd";
 import Layout from "antd/lib/layout/layout";
 import { Header, Content, Footer } from "antd/lib/layout/layout";
